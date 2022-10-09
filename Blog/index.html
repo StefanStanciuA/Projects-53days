@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your daily blog</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_box">
+            <section class="content">
+                <h1>Welcome to Your daily blog!</h1>
+                <div class="blog-box">
+                    <ul class="blog-list">
+                        <h2>No blogs yet...</h2>
+                    </ul>
+                    <form id="my_form">
+                        <div class="info">
+                            <label> Blog title</label>
+                            <input octavalidate="R, TITLE" class="title" type="text" placeholder="Entre blog title...">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small></small>
+                        </div>
+                        <div class="info">
+                            <label>Content</label>
+                            <textarea octavalidate="R, CONTENT" type="text"
+                                placeholder="Entre blog content..."></textarea>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small></small>
+                        </div>
+                        <div class="info">
+                            <label>Data</label>
+                            <input octavalidate="R, DATA" class="data" type="date">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small></small>
+                        </div>
+                        <button type="submit" class="btnsubmit">SUBMIT BLOG</button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <span>Rebuilt with 😓 by Stefan</span>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+
+</html>

